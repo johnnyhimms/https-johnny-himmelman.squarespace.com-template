@@ -1,0 +1,103 @@
+<!doctype HTML>
+<html>
+<head>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta charset="utf-8">
+	<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+	<title>John Himmelman's Portfolio</title>
+	<meta name="description" content="Portfolio - User Interface and Interaction Designer based in Los Angeles
+	experienced with both web and print design"
+	<meta name="author" content="John Himmelman">
+	
+	<!-- STYLESHEETS HERE -->
+	<link rel="stylesheet" type="text/css" href="css/cssReset.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+
+	<!-- FAVICON --> 
+	<link rel="icon" type"image/png" href="images/favicon.png"/>
+
+	<!--FONTS-->
+	<link href="http://fonts.googleapis.com/css?family=Roboto+Mono:400,400italic,500,500italic,700,700italic|Roboto:400,400italic,500,500italic,700,700italic|Material+Icons" rel="stylesheet" type="text/css">
+
+	<!-- SCRIPTS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/customize.js"></script>
+
+	<script>
+	$(document).ready(function() {
+		$(window).scroll(function(){
+			if($(this).scrollTop() > 1) {
+				$('header').addClass("sticky");
+			} else {
+				$('header').removeClass("sticky");
+			}
+		});//end scroll script
+
+	});//end ready script
+	</script>
+</head>
+<body>
+	<div class='home-page'>
+		<header>
+			<div class="bars">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div id="side-nav">
+				<section>
+					<div class="nav-box">
+						<i class="material-icons">face</i>
+						<h2>About Me</h2>
+					</div>
+				</section>
+				<section>
+					<div class="nav-box">
+						<i class="material-icons">folder</i>
+						<h2>Portfolio</h2>
+					</div>
+				</section>
+				<section>
+					<div class="nav-box">
+						<i class="material-icons">description</i>
+						<h2>Resume</h2>
+					</div>
+				</section>
+				<section>
+					<div class="nav-box">
+						<i class="material-icons">mail_outline</i>
+						<h2>Contact</h2>
+					</div>
+				</section>
+			</div>
+		</header>
+		<article>
+			<h1>John Himmelman</h1>
+			<span class="text-mask overflow--hidden johnnyDescContainer">
+				<ul id="carousel-first" class="cubic-easeinout--fast text-animate">
+					<li class="cubic-easeinout--fast delay-075s">
+						<h2 class="giga letter-pull portable-huge palm-huge letter-pull--upper-r">UI Designer</h2>
+					</li>
+					<li class="hero-title-carousel-reveal cubic-easeinout--fast delay-075s">
+						<h2 class="giga letter-pull portable-huge palm-huge letter-pull--upper-r">Gamer</h2>
+					</li>
+					<li class="hero-title-carousel-reveal cubic-easeinout--fast delay-075s">
+						<h2 class="giga letter-pull portable-huge palm-huge letter-pull--upper-r">UX Designer</h2>
+					</li>
+					<li class="hero-title-carousel-reveal cubic-easeinout--fast delay-075s">
+						<h2 class="giga letter-pull portable-huge palm-huge letter-pull--upper-r">Music Lover</h2>
+					</li>
+					<li class="hero-title-carousel-reveal cubic-easeinout--fast delay-075s">
+						<h2 class="giga letter-pull portable-huge palm-huge letter-pull--upper-r">Front-End Developer</h2>
+					</li>
+					<li class="hero-title-carousel-reveal cubic-easeinout--fast delay-075s">
+						<h2 class="giga letter-pull portable-huge palm-huge letter-pull--upper-r">Netflix Enthusiast</h2>
+					</li>
+				</ul>
+			<span>
+		</article>
+		<!-- <i id="movePageDown" class="material-icons">arrow_downward</i> -->
+	</div>
+</body>
+</html>
